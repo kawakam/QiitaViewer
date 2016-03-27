@@ -1,5 +1,5 @@
 //
-//  Article.swift
+//  Articles.swift
 //  QitaListViewer
 //
 //  Created by 川上智樹 on 2016/03/26.
@@ -10,9 +10,9 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class Article: NSObject {
+class Articles: NSObject {
     
-    class func getArticles(callback: () -> Void) {
+    class func getArticles(callback: () -> Void)  -> [[String: String?]] {
         var articles: [[String: String?]] = []
         
         Alamofire.request(.GET, "https://qiita.com/api/v2/items")
@@ -28,9 +28,10 @@ class Article: NSObject {
                         "userId": json["user"]["id"].string
                     ]
                     articles.append(article)
-                    print(articles)
                 }
         }
         callback()
+        print(articles)
+        return articles
     }
 }

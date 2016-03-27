@@ -10,11 +10,10 @@ import UIKit
 
 class QitaListViewController: UIViewController, UITableViewDelegate {
     private let qiitaListModel = QiitaListModel()
-    var qiitaListView: QiitaListView!
     
     override func loadView() {
         super.loadView()
-        view = QiitaListView(model: qiitaListModel)
+        self.view = QiitaListView(model: qiitaListModel)
     }
     
     override func viewDidLoad() {
@@ -24,7 +23,8 @@ class QitaListViewController: UIViewController, UITableViewDelegate {
         let qiitaListView = view as! QiitaListView
         qiitaListView.table.delegate = self
         qiitaListView.table.dataSource = qiitaListModel
-        Article.getArticles {
+        
+        qiitaListModel.articles = Articles.getArticles {
             qiitaListView.table.reloadData()
         }
     }

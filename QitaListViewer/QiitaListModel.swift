@@ -12,9 +12,10 @@ import SwiftyJSON
 
 class QiitaListModel: NSObject, UITableViewDataSource {
     var articles: [[String: String?]] = []
-
+    
     override init() {
-        Article.getArticles(articles)        
+        articles = Articles.getArticles {
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
