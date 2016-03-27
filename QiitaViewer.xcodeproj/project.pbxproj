@@ -41,16 +41,16 @@
 /* Begin PBXFileReference section */
 		550845D91CA58CE700529FFD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		550845DA1CA58CE700529FFD /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		553AB4B81CA57A560039BE58 /* QitaListViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QitaListViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		553AB4B81CA57A560039BE58 /* QiitaViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		553AB4BB1CA57A570039BE58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		553AB4C01CA57A570039BE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		553AB4C21CA57A570039BE58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		553AB4C51CA57A570039BE58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		553AB4C71CA57A570039BE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		553AB4CC1CA57A570039BE58 /* QitaListViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QitaListViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		553AB4CC1CA57A570039BE58 /* QiitaViewer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiitaViewer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		553AB4D01CA57A570039BE58 /* QitaListViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QitaListViewerTests.swift; sourceTree = "<group>"; };
 		553AB4D21CA57A570039BE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		553AB4D71CA57A570039BE58 /* QitaListViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QitaListViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		553AB4D71CA57A570039BE58 /* QiitaViewer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiitaViewer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		553AB4DB1CA57A570039BE58 /* QitaListViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QitaListViewerUITests.swift; sourceTree = "<group>"; };
 		553AB4DD1CA57A570039BE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		553AB4E91CA57A920039BE58 /* QitaListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QitaListViewController.swift; sourceTree = "<group>"; };
@@ -86,12 +86,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		553AB4AF1CA57A560039BE58 = {
+		551DB9BB1CA7B9AC00861A09 /* QiitaViewr */ = {
 			isa = PBXGroup;
 			children = (
 				558BBD1B1CA65267009D239C /* Scenes */,
-				553AB4CF1CA57A570039BE58 /* QitaListViewerTests */,
-				553AB4DA1CA57A570039BE58 /* QitaListViewerUITests */,
+				553AB4EF1CA57B2B0039BE58 /* Models */,
+				55547B871CA596BB0089AD53 /* Application */,
+			);
+			name = QiitaViewr;
+			sourceTree = "<group>";
+		};
+		553AB4AF1CA57A560039BE58 = {
+			isa = PBXGroup;
+			children = (
+				551DB9BB1CA7B9AC00861A09 /* QiitaViewr */,
+				553AB4CF1CA57A570039BE58 /* QiitaViewerTests */,
+				553AB4DA1CA57A570039BE58 /* QiitaViewerUITests */,
 				553AB4B91CA57A560039BE58 /* Products */,
 				55547B861CA5969B0089AD53 /* Carthage */,
 			);
@@ -100,9 +110,9 @@
 		553AB4B91CA57A560039BE58 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				553AB4B81CA57A560039BE58 /* QitaListViewer.app */,
-				553AB4CC1CA57A570039BE58 /* QitaListViewerTests.xctest */,
-				553AB4D71CA57A570039BE58 /* QitaListViewerUITests.xctest */,
+				553AB4B81CA57A560039BE58 /* QiitaViewer.app */,
+				553AB4CC1CA57A570039BE58 /* QiitaViewer.xctest */,
+				553AB4D71CA57A570039BE58 /* QiitaViewer.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,28 +123,28 @@
 				553AB4EB1CA57AEB0039BE58 /* QiitaListModel.swift */,
 				553AB4ED1CA57B080039BE58 /* QiitaListView.swift */,
 				553AB4E91CA57A920039BE58 /* QitaListViewController.swift */,
-				553AB4EF1CA57B2B0039BE58 /* Models */,
-				55547B871CA596BB0089AD53 /* Application */,
 			);
 			name = QitaList;
 			path = QitaListViewer;
 			sourceTree = "<group>";
 		};
-		553AB4CF1CA57A570039BE58 /* QitaListViewerTests */ = {
+		553AB4CF1CA57A570039BE58 /* QiitaViewerTests */ = {
 			isa = PBXGroup;
 			children = (
 				553AB4D01CA57A570039BE58 /* QitaListViewerTests.swift */,
 				553AB4D21CA57A570039BE58 /* Info.plist */,
 			);
+			name = QiitaViewerTests;
 			path = QitaListViewerTests;
 			sourceTree = "<group>";
 		};
-		553AB4DA1CA57A570039BE58 /* QitaListViewerUITests */ = {
+		553AB4DA1CA57A570039BE58 /* QiitaViewerUITests */ = {
 			isa = PBXGroup;
 			children = (
 				553AB4DB1CA57A570039BE58 /* QitaListViewerUITests.swift */,
 				553AB4DD1CA57A570039BE58 /* Info.plist */,
 			);
+			name = QiitaViewerUITests;
 			path = QitaListViewerUITests;
 			sourceTree = "<group>";
 		};
@@ -144,6 +154,7 @@
 				558BBD1C1CA652DF009D239C /* Article.swift */,
 			);
 			name = Models;
+			path = QitaListViewer;
 			sourceTree = "<group>";
 		};
 		55547B861CA5969B0089AD53 /* Carthage */ = {
@@ -166,6 +177,7 @@
 				553AB4C71CA57A570039BE58 /* Info.plist */,
 			);
 			name = Application;
+			path = QitaListViewer;
 			sourceTree = "<group>";
 		};
 		558BBD1B1CA65267009D239C /* Scenes */ = {
@@ -179,9 +191,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		553AB4B71CA57A560039BE58 /* QitaListViewer */ = {
+		553AB4B71CA57A560039BE58 /* QiitaViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 553AB4E01CA57A570039BE58 /* Build configuration list for PBXNativeTarget "QitaListViewer" */;
+			buildConfigurationList = 553AB4E01CA57A570039BE58 /* Build configuration list for PBXNativeTarget "QiitaViewer" */;
 			buildPhases = (
 				553AB4B41CA57A560039BE58 /* Sources */,
 				553AB4B51CA57A560039BE58 /* Frameworks */,
@@ -192,14 +204,14 @@
 			);
 			dependencies = (
 			);
-			name = QitaListViewer;
+			name = QiitaViewer;
 			productName = QitaListViewer;
-			productReference = 553AB4B81CA57A560039BE58 /* QitaListViewer.app */;
+			productReference = 553AB4B81CA57A560039BE58 /* QiitaViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		553AB4CB1CA57A570039BE58 /* QitaListViewerTests */ = {
+		553AB4CB1CA57A570039BE58 /* QiitaViewerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 553AB4E31CA57A570039BE58 /* Build configuration list for PBXNativeTarget "QitaListViewerTests" */;
+			buildConfigurationList = 553AB4E31CA57A570039BE58 /* Build configuration list for PBXNativeTarget "QiitaViewerTests" */;
 			buildPhases = (
 				553AB4C81CA57A570039BE58 /* Sources */,
 				553AB4C91CA57A570039BE58 /* Frameworks */,
@@ -210,14 +222,14 @@
 			dependencies = (
 				553AB4CE1CA57A570039BE58 /* PBXTargetDependency */,
 			);
-			name = QitaListViewerTests;
+			name = QiitaViewerTests;
 			productName = QitaListViewerTests;
-			productReference = 553AB4CC1CA57A570039BE58 /* QitaListViewerTests.xctest */;
+			productReference = 553AB4CC1CA57A570039BE58 /* QiitaViewer.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		553AB4D61CA57A570039BE58 /* QitaListViewerUITests */ = {
+		553AB4D61CA57A570039BE58 /* QiitaViewerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 553AB4E61CA57A570039BE58 /* Build configuration list for PBXNativeTarget "QitaListViewerUITests" */;
+			buildConfigurationList = 553AB4E61CA57A570039BE58 /* Build configuration list for PBXNativeTarget "QiitaViewerUITests" */;
 			buildPhases = (
 				553AB4D31CA57A570039BE58 /* Sources */,
 				553AB4D41CA57A570039BE58 /* Frameworks */,
@@ -228,9 +240,9 @@
 			dependencies = (
 				553AB4D91CA57A570039BE58 /* PBXTargetDependency */,
 			);
-			name = QitaListViewerUITests;
+			name = QiitaViewerUITests;
 			productName = QitaListViewerUITests;
-			productReference = 553AB4D71CA57A570039BE58 /* QitaListViewerUITests.xctest */;
+			productReference = 553AB4D71CA57A570039BE58 /* QiitaViewer.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -256,7 +268,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 553AB4B31CA57A560039BE58 /* Build configuration list for PBXProject "QitaListViewer" */;
+			buildConfigurationList = 553AB4B31CA57A560039BE58 /* Build configuration list for PBXProject "QiitaViewer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -269,9 +281,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				553AB4B71CA57A560039BE58 /* QitaListViewer */,
-				553AB4CB1CA57A570039BE58 /* QitaListViewerTests */,
-				553AB4D61CA57A570039BE58 /* QitaListViewerUITests */,
+				553AB4B71CA57A560039BE58 /* QiitaViewer */,
+				553AB4CB1CA57A570039BE58 /* QiitaViewerTests */,
+				553AB4D61CA57A570039BE58 /* QiitaViewerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -356,12 +368,12 @@
 /* Begin PBXTargetDependency section */
 		553AB4CE1CA57A570039BE58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 553AB4B71CA57A560039BE58 /* QitaListViewer */;
+			target = 553AB4B71CA57A560039BE58 /* QiitaViewer */;
 			targetProxy = 553AB4CD1CA57A570039BE58 /* PBXContainerItemProxy */;
 		};
 		553AB4D91CA57A570039BE58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 553AB4B71CA57A560039BE58 /* QitaListViewer */;
+			target = 553AB4B71CA57A560039BE58 /* QiitaViewer */;
 			targetProxy = 553AB4D81CA57A570039BE58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -480,7 +492,7 @@
 				INFOPLIST_FILE = QitaListViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yatuhasiumai.QitaListViewer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = QiitaViewer;
 			};
 			name = Debug;
 		};
@@ -495,7 +507,7 @@
 				INFOPLIST_FILE = QitaListViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yatuhasiumai.QitaListViewer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = QiitaViewer;
 			};
 			name = Release;
 		};
@@ -506,8 +518,8 @@
 				INFOPLIST_FILE = QitaListViewerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yatuhasiumai.QitaListViewerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QitaListViewer.app/QitaListViewer";
+				PRODUCT_NAME = QiitaViewer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QiitaViewer.app/QiitaViewer";
 			};
 			name = Debug;
 		};
@@ -518,8 +530,8 @@
 				INFOPLIST_FILE = QitaListViewerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yatuhasiumai.QitaListViewerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QitaListViewer.app/QitaListViewer";
+				PRODUCT_NAME = QiitaViewer;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QiitaViewer.app/QiitaViewer";
 			};
 			name = Release;
 		};
@@ -529,7 +541,7 @@
 				INFOPLIST_FILE = QitaListViewerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yatuhasiumai.QitaListViewerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = QiitaViewer;
 				TEST_TARGET_NAME = QitaListViewer;
 			};
 			name = Debug;
@@ -540,7 +552,7 @@
 				INFOPLIST_FILE = QitaListViewerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yatuhasiumai.QitaListViewerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = QiitaViewer;
 				TEST_TARGET_NAME = QitaListViewer;
 			};
 			name = Release;
@@ -548,7 +560,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		553AB4B31CA57A560039BE58 /* Build configuration list for PBXProject "QitaListViewer" */ = {
+		553AB4B31CA57A560039BE58 /* Build configuration list for PBXProject "QiitaViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				553AB4DE1CA57A570039BE58 /* Debug */,
@@ -557,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		553AB4E01CA57A570039BE58 /* Build configuration list for PBXNativeTarget "QitaListViewer" */ = {
+		553AB4E01CA57A570039BE58 /* Build configuration list for PBXNativeTarget "QiitaViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				553AB4E11CA57A570039BE58 /* Debug */,
@@ -566,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		553AB4E31CA57A570039BE58 /* Build configuration list for PBXNativeTarget "QitaListViewerTests" */ = {
+		553AB4E31CA57A570039BE58 /* Build configuration list for PBXNativeTarget "QiitaViewerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				553AB4E41CA57A570039BE58 /* Debug */,
@@ -575,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		553AB4E61CA57A570039BE58 /* Build configuration list for PBXNativeTarget "QitaListViewerUITests" */ = {
+		553AB4E61CA57A570039BE58 /* Build configuration list for PBXNativeTarget "QiitaViewerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				553AB4E71CA57A570039BE58 /* Debug */,

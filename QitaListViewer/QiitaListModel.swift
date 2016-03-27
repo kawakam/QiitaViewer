@@ -13,11 +13,6 @@ import SwiftyJSON
 class QiitaListModel: NSObject, UITableViewDataSource {
     var articles: [[String: String?]] = []
     
-    override init() {
-        articles = Articles.getArticles {
-        }
-    }
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articles.count
     }

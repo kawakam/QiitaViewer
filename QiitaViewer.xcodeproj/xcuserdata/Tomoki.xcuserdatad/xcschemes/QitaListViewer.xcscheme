@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "553AB4B71CA57A560039BE58"
-               BuildableName = "QitaListViewer.app"
-               BlueprintName = "QitaListViewer"
-               ReferencedContainer = "container:QitaListViewer.xcodeproj">
+               BuildableName = "QiitaViewer.app"
+               BlueprintName = "QiitaViewer"
+               ReferencedContainer = "container:QiitaViewer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "553AB4CB1CA57A570039BE58"
-               BuildableName = "QitaListViewerTests.xctest"
-               BlueprintName = "QitaListViewerTests"
-               ReferencedContainer = "container:QitaListViewer.xcodeproj">
+               BuildableName = "QiitaViewer.xctest"
+               BlueprintName = "QiitaViewerTests"
+               ReferencedContainer = "container:QiitaViewer.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "553AB4D61CA57A570039BE58"
-               BuildableName = "QitaListViewerUITests.xctest"
-               BlueprintName = "QitaListViewerUITests"
-               ReferencedContainer = "container:QitaListViewer.xcodeproj">
+               BuildableName = "QiitaViewer.xctest"
+               BlueprintName = "QiitaViewerUITests"
+               ReferencedContainer = "container:QiitaViewer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "553AB4B71CA57A560039BE58"
-            BuildableName = "QitaListViewer.app"
-            BlueprintName = "QitaListViewer"
-            ReferencedContainer = "container:QitaListViewer.xcodeproj">
+            BuildableName = "QiitaViewer.app"
+            BlueprintName = "QiitaViewer"
+            ReferencedContainer = "container:QiitaViewer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "553AB4B71CA57A560039BE58"
-            BuildableName = "QitaListViewer.app"
-            BlueprintName = "QitaListViewer"
-            ReferencedContainer = "container:QitaListViewer.xcodeproj">
+            BuildableName = "QiitaViewer.app"
+            BlueprintName = "QiitaViewer"
+            ReferencedContainer = "container:QiitaViewer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "553AB4B71CA57A560039BE58"
-            BuildableName = "QitaListViewer.app"
-            BlueprintName = "QitaListViewer"
-            ReferencedContainer = "container:QitaListViewer.xcodeproj">
+            BuildableName = "QiitaViewer.app"
+            BlueprintName = "QiitaViewer"
+            ReferencedContainer = "container:QiitaViewer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

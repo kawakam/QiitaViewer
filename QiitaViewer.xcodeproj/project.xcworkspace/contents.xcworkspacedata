@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:QitaListViewer.xcodeproj">
+      location = "self:/Users/Tomoki/Desktop/Practice/QitaListViewer/QiitaViewer.xcodeproj">
    </FileRef>
 </Workspace>
