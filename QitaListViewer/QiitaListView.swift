@@ -15,6 +15,10 @@ class QiitaListView: UIView {
         table = UITableView(frame: CGRectZero, style: .Plain)
         super.init(frame: CGRectZero)
         self.addSubview(table)
+        
+        Article.getArticles { _ in
+            self.table.reloadData()
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -10,6 +10,7 @@ import UIKit
 
 class QitaListViewController: UIViewController, UITableViewDelegate {
     private let qiitaListModel = QiitaListModel()
+    var qiitaListView: QiitaListView!
     
     override func loadView() {
         super.loadView()
@@ -23,14 +24,12 @@ class QitaListViewController: UIViewController, UITableViewDelegate {
         let qiitaListView = view as! QiitaListView
         qiitaListView.table.delegate = self
         qiitaListView.table.dataSource = qiitaListModel
-        
-        qiitaListModel.articles.append(Article.getArticles { () in
+        Article.getArticles {
             qiitaListView.table.reloadData()
-        })
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
 }
