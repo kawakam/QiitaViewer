@@ -11,7 +11,11 @@ import Alamofire
 import SwiftyJSON
 
 class QiitaListModel: NSObject, UITableViewDataSource {
-    var articles: [[String: String?]] = []
+    var articles: [Article] = []
+    
+    override init() {
+        articles = GetArticles.getArticles { }
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articles.count
@@ -21,8 +25,8 @@ class QiitaListModel: NSObject, UITableViewDataSource {
         let cell = UITableViewCell(style: .Subtitle, reuseIdentifier: "cell")
         
         let article = articles[indexPath.row]
-        cell.textLabel?.text = article["title"]!
-        cell.detailTextLabel?.text = article["userId"]!
+        cell.textLabel?.text = article.title
+        cell.detailTextLabel?.text = article.userId
         return cell
     }
 }

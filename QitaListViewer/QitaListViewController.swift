@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AsyncKit
 
 class QitaListViewController: UIViewController, UITableViewDelegate {
     private let qiitaListModel = QiitaListModel()
@@ -24,7 +25,7 @@ class QitaListViewController: UIViewController, UITableViewDelegate {
         qiitaListView.table.delegate = self
         qiitaListView.table.dataSource = qiitaListModel
         
-        qiitaListModel.articles = Articles.getArticles {
+        qiitaListModel.articles = GetArticles.getArticles {
             qiitaListView.table.reloadData()
         }
     }
